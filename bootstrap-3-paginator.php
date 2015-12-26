@@ -123,18 +123,18 @@ $lpm1 = $lastpage - 1;
 $pagination = "";
 if($lastpage > 1)
 {
-$pagination .= "<ul class="pagination">";
+$pagination .= "<ul class='pagination'>";
 if ($this->_page > 1)
 $pagination.= "<li>« previous</li>";
 else
-$pagination.= "<li class="disabled">« previous</li>";
+$pagination.= "<li class='disabled'>« previous</li>";
 
 if ($lastpage < 7 + ($adjacents * 2))
 {
 for ($counter = 1; $counter <= $lastpage; $counter++)
 {
 if ($counter == $this->_page)
-$pagination.= "<li class="active">$counter</li>";
+$pagination.= "<li class='active'>$counter</li>";
 else
 $pagination.= "<li>$counter</li>";
 }
@@ -146,7 +146,7 @@ if($this->_page < 1 + ($adjacents * 2))
 for ($counter = 1; $counter < 4 + ($adjacents * 2); $counter++)
 {
 if ($counter == $this->_page)
-$pagination.= "<li class="active">$counter</li>";
+$pagination.= "<li class='active'>$counter</li>";
 else
 $pagination.= "<li>$counter</li>";
 }
@@ -162,7 +162,7 @@ $pagination.= "...";
 for ($counter = $this->_page - $adjacents; $counter <= $this->_page + $adjacents; $counter++)
 {
 if ($counter == $this->_page)
-$pagination.= "<li class="active">$counter</li>";
+$pagination.= "<li class='active'>$counter</li>";
 else
 $pagination.= "<li>$counter</li>";
 }
@@ -178,7 +178,7 @@ $pagination.= "..";
 for ($counter = $lastpage - (2 + ($adjacents * 2)); $counter <= $lastpage; $counter++)
 {
 if ($counter == $this->_page)
-$pagination.= "<li class="active">$counter</li>";
+$pagination.= "<li class='active'>$counter</li>";
 else
 $pagination.= "<li>$counter</li>";
 }
@@ -188,7 +188,7 @@ $pagination.= "<li>$counter</li>";
 if ($this->_page < $counter - 1)
 $pagination.= "<li>next »</li>";
 else
-$pagination.= "<li class="disabled">next »</li>";
+$pagination.= "<li class='disabled'>next »</li>";
 $pagination.= "</ul>\n";
 }
 
